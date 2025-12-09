@@ -1,45 +1,92 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# ============================================
+# Flutter/Dart/Pub
+# ============================================
+.dart_tool/
+.packages
+.pub/
+build/
+flutter_export_environment.sh
 
-# IntelliJ related
+# Do not commit pubspec.lock for Flutter apps (packages yes)
+pubspec.lock
+
+# ============================================
+# Platform Builds
+# ============================================
+# Android
+android/app/build/
+android/.gradle/
+android/.idea/
+
+# iOS & macOS
+ios/Pods/
+ios/Flutter/.generated/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Debug.xcconfig
+ios/Flutter/Release.xcconfig
+
+macos/Flutter/ephemeral/
+macos/build/
+macos/Pods/
+macos/.generated/
+
+# Windows
+windows/build/
+windows/x64/
+windows/runner/Debug/
+windows/runner/Release/
+
+# Linux
+linux/build/
+linux/runner/build/
+
+# Web
+web/.dart_tool/
+web/build/
+
+# ============================================
+# IDE Files
+# ============================================
+# VS Code
+.vscode/* 
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# Android Studio / IntelliJ
 *.iml
-*.ipr
-*.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# ============================================
+# System Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
+# Windows
+Thumbs.db
 
-# Symbolication related
-app.*.symbols
+# ============================================
+# Sensitive Keys / Tokens
+# ============================================
+*.env
+*.key
 
-# Obfuscation related
-app.*.map.json
+# ============================================
+# Crash & Temp
+# ============================================
+*.log
+*.tmp
+*.swp
+*.lock
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# ============================================
+# Custom Project Rules
+# ============================================
+# Any large assets you don’t want in Git
+rsc/
+assets/large/
